@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class BatteryPage extends StatefulWidget {
+  const BatteryPage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<BatteryPage> createState() => _BatteryPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _BatteryPageState extends State<BatteryPage> {
   static const _platform = MethodChannel('native_app/battery');
 
   String _batteryLevel = 'Unknown battery level..';
